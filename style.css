@@ -1,0 +1,142 @@
+
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #d8d3d3;
+}
+
+
+.menu-container {
+  max-width: 950px;
+  margin: 0 auto;
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+}
+
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+}
+
+h1::before {
+  margin-bottom: 20px;
+}
+
+h1::after {
+  margin-top: 20px;
+}
+
+
+.menu-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+.menu-item {
+  width: 45%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  text-align: left;
+}
+
+
+.menu-item img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;          
+  object-fit: cover;          
+  border: 2px dashed red;      
+}
+
+
+.menu-item h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+
+.menu-item span {
+  color: orange;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #646161;
+  margin: 0;
+  max-width: 220px;
+}
+.dessert-beverage{
+    display: flex;
+    justify-content: space-between;
+   margin-top: 20px;
+   text-align: left;
+   padding: 0 20px;
+
+}
+.dessert-beverage div{
+   width: 45%;
+}
+.dessert-beverage div h4{
+   font-size: 20px;
+   color: black;
+}
+.dessert-beverage div ul{
+   list-style: none;
+   padding: 0;
+    
+}
+.dessert-beverage div ul li {
+   display: flex;
+   justify-content: space-between ;
+   margin: 5px 0;
+   border-bottom:1px solid #b1adad ;
+ 
+ 
+}
+@media  only screen and (max-width:640px) { 
+    h1{
+        font-size: 2rem;
+    }   
+    .menu-item{
+        flex-direction: column;
+        margin-bottom: 30px;
+    } 
+    .menu-item img{
+        width: 50%;
+        height: 200px;
+    }
+    .dessert-beverage{
+        flex-direction: column;
+    }
+    .dessert-beverage div{
+       width: 100%;
+    }
+}
